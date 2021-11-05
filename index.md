@@ -1,4 +1,3 @@
-## roe
 
 ### deploy your code as an API locally on your machine using Docker with
 
