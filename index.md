@@ -1,10 +1,8 @@
-install with
+**Step 1**
 ```
 pip install roe
 ```
-deploy with
+**Step 2**
 ```
 roe deploy -l path/to/package/folder
 ```
-
-![Welcome to roe](https://github.com/siliconhillstech/roe/blob/gh-pages/Welcome%20to%20ROE.png?raw=true)
