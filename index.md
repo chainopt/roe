@@ -21,7 +21,7 @@ You can find a sample project [here.](https://github.com/chainopt/roe-cli/tree/m
 
 ----
 
-#### - Deploy Package Arguments and Options
+#### Deploy Package Arguments and Options
 
 `roe deploy -l path/to/package/folder`
 
@@ -31,11 +31,11 @@ You can find a sample project [here.](https://github.com/chainopt/roe-cli/tree/m
   assigned.
 * `-q` is to deploy with no extra prompts to affirm redeployments and no webpage opening when finishing the deployment.
 
-#### - Re-deploying a package.
+#### Re-deploying a package.
 
 `roe deploy -l path/to/package/folder`
 
-#### If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.
+**If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.**
 
 e.g. `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
 or
