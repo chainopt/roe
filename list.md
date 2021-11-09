@@ -4,5 +4,6 @@ The list command allows us to see which models are currently deployed by roe. To
 
 `roe list -l`
 
-with an expected output like below:
+with an expected output shown below:
 
+![list example image](./roe_list.png)
