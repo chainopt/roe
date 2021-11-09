@@ -9,6 +9,6 @@
 
   with an expected output shown below:
 
-  ![list example image](./roe_list.png)
+  ![list example image](/roe_list.png)
   
 </details>
