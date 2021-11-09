@@ -46,7 +46,9 @@ or
 
 
 ---
+
 ### Other commands:
+
 | Description                 | Command                                 |
 | ----------------------------|-----------------------------------------|
 | Verify package configuration| `roe verify -l path/to/package/folder`  |
@@ -73,6 +75,7 @@ file [here.](https://github.com/chainopt/roe-cli/tree/main/samples/credentials.y
 
 ##### Eg: `roe deploy --help`
 ----
+
 <details>
   
 <summary><h2>List</h2></summary>
