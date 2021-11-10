@@ -15,11 +15,26 @@ pip.
 
    Note: you will be prompted to enter the provided **docker hub username and password**
 
+
 ----
 
-#### Deploy Package Arguments and Options
+
+## Commands:
+
+Click on any of the following commands to see more details, example usage, and expected outputs.
+
+
+<details>
+   
+<summary class="summary-header">
+Deploy
+</summary>
+
+The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
 
 `roe deploy -l path/to/package/folder`
+
+Additionally, the following parameters can be added to customize your deployment, although they are optional:
 
 * `-l` is for local deployment (only local is available for now).
 * `-n` is for specifying a package name. If left out, the folder name is chosen as package name.
@@ -27,25 +42,18 @@ pip.
   assigned.
 * `-q` is to deploy with no extra prompts to affirm redeployments and no webpage opening when finishing the deployment.
 
-#### Re-deploying a package.
+The expected command-line output is shown below:
 
-`roe deploy -l path/to/package/folder`
+![deploy example](./roe_deploy.png)
 
-**If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.**
+When you open the webpage, it should look similar to:
 
-e.g. `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
-or
-
-`roe deploy -l -n myCustomName /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
-
->Note: It will re-use the port from the first deployment.
+![API page](./roe_deployed_model.png)
+  
+</details>
 
 
----
 
-### Other commands:
-
-Click on any of the following commands to see more details, example usage, and expected outputs.
 
 <details>
   
@@ -115,34 +123,6 @@ If you have any running packages, you will be prompted if you'd like to stop the
 </details>
 
 
-
-<details>
-   
-<summary class="summary-header">
-Deploy
-</summary>
-
-The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
-
-`roe deploy -l path/to/package/folder`
-
-Additionally, the following parameters can be added to customize your deployment, although they are optional:
-
-* `-l` is for local deployment (only local is available for now).
-* `-n` is for specifying a package name. If left out, the folder name is chosen as package name.
-* `-p` is a port you specify for it to be spun up on(The valid range is 1024-65535). If left out, a port will be
-  assigned.
-* `-q` is to deploy with no extra prompts to affirm redeployments and no webpage opening when finishing the deployment.
-
-The expected command-line output is shown below:
-
-![deploy example](./roe_deploy.png)
-
-When you open the webpage, it should look similar to:
-
-![API page](./roe_deployed_model.png)
-  
-</details>
 
 
 <details>
