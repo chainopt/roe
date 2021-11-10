@@ -49,6 +49,19 @@ The expected command-line output is shown below:
 When you open the webpage, it should look similar to:
 
 ![API page](./roe_deployed_model.png)
+   
+#### Re-deploying a package.
+
+`roe deploy -l path/to/package/folder`
+
+**If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.**
+
+e.g. `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
+or
+
+`roe deploy -l -n myCustomName /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
+
+>Note: It will re-use the port from the first deployment.
   
 </details>
 
