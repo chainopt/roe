@@ -78,7 +78,11 @@ file [here.](https://github.com/chainopt/roe-cli/tree/main/samples/credentials.y
 
 <details>
    
-<summary class="summary-header">Deploy</summary>
+<summary class="summary-header">
+
+Deploy
+
+</summary>
 
 The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
 
@@ -106,7 +110,9 @@ When you open the webpage, it should look similar to:
 
 <details>
   
-<summary class="summary-header">List</summary>
+<summary class="summary-header">
+List
+</summary>
    
 The list command allows us to see which models are currently deployed by roe. To run list, simply run the following line:
 
