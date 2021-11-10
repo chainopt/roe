@@ -15,9 +15,7 @@ pip.
 
    eg: `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myProject`
 
-   Note: you will be prompted to enter your **docker hub username, password, and email**
-
-You can find a sample project [here.](https://github.com/chainopt/roe-cli/tree/main/samples/myProject)
+   Note: you will be prompted to enter the provided **docker hub username and password**
 
 ----
 
@@ -49,39 +47,81 @@ or
 
 ### Other commands:
 
-| Description                 | Command                                 |
-| ----------------------------|-----------------------------------------|
-| Verify package configuration| `roe verify -l path/to/package/folder`  |
-| List packages deployed      | `roe list -l`                           |
-| Stop a package ¹            | `roe stop -l myProject`                 |
-| Stop all packages           | `roe stop -l --all`                     |
-| Start a package             | `roe start -l myProject`                |
-| Start all packages          | `roe start -l --all`                    |
-| Undeploy a package          | `roe undeploy -l myProject`             |
-| Undeploy all packages       | `roe undeploy -l --all`                 |
-| Begin ROE session ² ³       | `roe begin -l`                          |
-| End ROE session             | `roe end -l`                            |
+Click on any of the following commands to see more details, example usage, and expected outputs.
 
-¹ If a model API associated with this package is running, you will be asked to enter 'Y' to stop it and proceed with
-deleting the package.
+<details>
+  
+<summary class="summary-header">
+Help
+</summary>
+   
+At any time, you can see what commands are avaible to you for roe by running
 
-² A ROE Session begins automatically upon running `roe deploy` or `roe list`.
+```roe --help```
 
-³ You can also point to a yaml file like this:
-`roe begin -l -f /Users/myUser/Documents/docker-creds.yaml`. Download a sample credential
-file [here.](https://github.com/chainopt/roe-cli/tree/main/samples/credentials.yaml)
+with an expected output shown below:
+   
+![list example image](/roe_help.png)
 
-##### You can use the `--help` command in front of any command from within the CLI for help with options and arguments.
+</details>
 
-##### Eg: `roe deploy --help`
-----
+
+
+<details>
+  
+<summary class="summary-header">
+Begin
+</summary>
+   
+Running any roe command outside of `--help` will begin roe, but if you'd like to start roe without any other functionality, you can run
+
+```roe begin -l```
+
+with an expected output shown below:
+   
+![list example image](/roe_begin.png)
+   
+Additionally, you can optionally pass through a YAML file with the credentials in it. The syntax for that is:
+
+`roe begin -l -f path/to/file/docker-creds.yaml`
+   
+where the YAML file can have any filename, but must be formatted as follows:
+
+```
+docker_pw: mypassword
+docker_user: myusername
+```
+
+</details>
+
+
+
+<details>
+  
+<summary class="summary-header">
+End
+</summary>
+   
+You can stop the roe services from running locally on your machine by running
+
+```roe end -l```
+
+with an expected output shown below:
+   
+![list example image](/roe_end.png)
+
+
+If you have any running packages, you will be prompted if you'd like to stop them temporarily (not deleted) and if so, they can be restarted upon starting up roe again.
+
+   
+</details>
+
+
 
 <details>
    
 <summary class="summary-header">
-
 Deploy
-
 </summary>
 
 The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
@@ -107,6 +147,70 @@ When you open the webpage, it should look similar to:
 </details>
 
 
+<details>
+  
+<summary class="summary-header">
+Verify
+</summary>
+   
+Before attempting to deploy a package, it can sometimes be helpful to verify that the package is properly formatted. This is automatically done when running deploy, but can be done seperately by running
+
+```roe verify -l path/to/package/folder```
+
+with an expected output shown below:
+   
+![list example image](/roe_verify_success.png)
+   
+Alternatively, if your package fails verification, you will likely see an output similar to:
+
+![list example image](/roe_verify_failure.png)
+   
+</details>
+
+
+
+<details>
+
+<summary class="summary-header">
+Undeploy
+</summary>
+   
+To undeploy any package, you can run:
+
+```roe undeploy -l -p packageName```
+
+The expected output for undeploying a package is shown below:
+   
+![undeploy example](/roe_undeploy.png)
+   
+Alternatively, if you'd like to undeploy all packages, you can run:
+
+```roe undeploy -l --all```
+
+The expected output for undeploying all packages is shown below:
+   
+![undeploy all example](/roe_undeploy_all.png)
+
+</details>
+
+
+
+<details>
+
+<summary class="summary-header">
+Logs
+</summary>
+   
+To get the logs for any package, simply run:
+
+```roe logs -l pacakgeName```
+
+The expected output for that command is shown below:
+   
+![logs example](/logs.png)
+
+</details>
+
 
 <details>
   
@@ -123,3 +227,54 @@ with an expected output shown below:
 ![list example image](/roe_list.png)
 
 </details>
+
+
+
+<details>
+  
+<summary class="summary-header">
+Start
+</summary>
+   
+To start a package that's not currently running, you can run
+
+```roe start -l -p packageName```
+   
+Alternatively, if you'd like to make sure that all stopped packages are running again, you can run:
+
+```roe start -l --all```
+
+Both commands currently run without any feedback, as shown below:
+   
+![start example](/roe_start.png)
+
+</details>
+
+
+
+
+<details>
+
+<summary class="summary-header">
+Stop
+</summary>
+   
+To stop any package, you can run:
+
+```roe stop -l -p packageName```
+   
+Alternatively, if you'd like to stop all packages, you can run:
+
+```roe stop -l --all```
+
+The expected output for stopping a package is shown below:
+   
+![stop example](/roe_stop.png)
+
+</details>
+
+
+
+
+
+
