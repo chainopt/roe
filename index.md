@@ -1,9 +1,8 @@
 [![PyPI version](https://badge.fury.io/py/roe.svg)](https://badge.fury.io/py/roe)
 [![pypi supported versions](https://img.shields.io/pypi/pyversions/roe.svg)](https://pypi.python.org/pypi/roe)
 
-This utility helps you deploy your code as an API locally on your machine
-using [Docker](https://www.docker.com/products/docker-desktop). It is a python based package that can be installed via
-pip.
+Before using, please ensure that [Python](https://www.python.org/downloads/) and [Docker](https://www.docker.com/products/docker-desktop) are installed and running on your machine.
+
 
 ## Quickstart
 
@@ -57,6 +56,7 @@ When you open the webpage, it should look similar to:
 **If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.**
 
 e.g. `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
+
 or
 
 `roe deploy -l -n myCustomName /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
