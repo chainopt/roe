@@ -3,7 +3,11 @@
 
 @import "{{ site.theme }}";
 
-a {
+.home-link {
   text-decoration: none;
   color: #fff;
+}
+
+summary:hover {
+  background-color: yellow;
 }
