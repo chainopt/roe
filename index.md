@@ -43,11 +43,11 @@ Additionally, the following parameters can be added to customize your deployment
 
 The expected command-line output is shown below:
 
-![deploy example](./roe_deploy.png)
+![deploy example](assets/img/roe_deploy.png)
 
 When you open the webpage, it should look similar to:
 
-![API page](./roe_deployed_model.png)
+![API page](assets/img/roe_deployed_model.png)
    
 #### Re-deploying a package.
 
@@ -80,7 +80,7 @@ At any time, you can see what commands are avaible to you for roe by running
 
 with an expected output shown below:
    
-![list example image](/roe_help.png)
+![list example image](/assets/img/roe_help.png)
 
 </details>
 
@@ -98,7 +98,7 @@ Running any roe command outside of `--help` will begin roe, but if you'd like to
 
 with an expected output shown below:
    
-![list example image](/roe_begin.png)
+![list example image](/assets/img/roe_begin.png)
    
 Additionally, you can optionally pass through a YAML file with the credentials in it. The syntax for that is:
 
@@ -127,7 +127,7 @@ You can stop the roe services from running locally on your machine by running
 
 with an expected output shown below:
    
-![list example image](/roe_end.png)
+![list example image](/assets/img/roe_end.png)
 
 
 If you have any running packages, you will be prompted if you'd like to stop them temporarily (not deleted) and if so, they can be restarted upon starting up roe again.
@@ -150,11 +150,11 @@ Before attempting to deploy a package, it can sometimes be helpful to verify tha
 
 with an expected output shown below:
    
-![list example image](/roe_verify_success.png)
+![list example image](/assets/img/roe_verify_success.png)
    
 Alternatively, if your package fails verification, you will likely see an output similar to:
 
-![list example image](/roe_verify_failure.png)
+![list example image](/assets/img/roe_verify_failure.png)
    
 </details>
 
@@ -172,7 +172,7 @@ To undeploy any package, you can run:
 
 The expected output for undeploying a package is shown below:
    
-![undeploy example](/roe_undeploy.png)
+![undeploy example](/assets/img/roe_undeploy.png)
    
 Alternatively, if you'd like to undeploy all packages, you can run:
 
@@ -180,7 +180,7 @@ Alternatively, if you'd like to undeploy all packages, you can run:
 
 The expected output for undeploying all packages is shown below:
    
-![undeploy all example](/roe_undeploy_all.png)
+![undeploy all example](/assets/img/roe_undeploy_all.png)
 
 </details>
 
@@ -215,7 +215,7 @@ The list command allows us to see which models are currently deployed by roe. To
 
 with an expected output shown below:
    
-![list example image](/roe_list.png)
+![list example image](/assets/img/roe_list.png)
 
 </details>
 
@@ -237,7 +237,7 @@ Alternatively, if you'd like to make sure that all stopped packages are running 
 
 Both commands currently run without any feedback, as shown below:
    
-![start example](/roe_start.png)
+![start example](/assets/img/roe_start.png)
 
 </details>
 
@@ -260,7 +260,7 @@ Alternatively, if you'd like to stop all packages, you can run:
 
 The expected output for stopping a package is shown below:
    
-![stop example](/roe_stop.png)
+![stop example](/assets/img/roe_stop.png)
 
 </details>
 
