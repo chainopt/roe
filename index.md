@@ -78,7 +78,11 @@ file [here.](https://github.com/chainopt/roe-cli/tree/main/samples/credentials.y
 
 <details>
    
-   <summary> Deploy </summary>
+   <summary> 
+      
+      Deploy 
+   
+   </summary>
    
    The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
 
