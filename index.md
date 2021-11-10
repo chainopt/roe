@@ -1,5 +1,3 @@
-# roe-cli
-
 [![PyPI version](https://badge.fury.io/py/roe.svg)](https://badge.fury.io/py/roe)
 [![pypi supported versions](https://img.shields.io/pypi/pyversions/roe.svg)](https://pypi.python.org/pypi/roe)
 
