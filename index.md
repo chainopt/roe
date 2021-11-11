@@ -194,12 +194,12 @@ Logs
    
 To get the logs for any package, simply run:
 
-```roe logs -l pacakgeName```
+```roe logs -l packageName```
 
 The expected output for that command is shown below:
    
 ![logs example](/assets/img/roe_logs.png)
-
+   
 </details>
 
 
