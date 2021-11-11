@@ -31,7 +31,7 @@ Deploy
 
 The deploy command allows us to deploy a package folder locally on our machine. To run deploy, simply run the following line:
 
-`roe deploy -l path/to/package/folder`
+`roe deploy -l path/to/package`
 
 Additionally, the following parameters can be added to customize your deployment, although they are optional:
 
@@ -51,15 +51,15 @@ When you open the webpage, it should look similar to:
    
 #### Re-deploying a package.
 
-`roe deploy -l path/to/package/folder`
+`roe deploy -l path/to/package`
 
 **If you used a custom name for your package, you will have to specify it with the package name (-n) flag just like you did initially.**
 
-e.g. `roe deploy -l /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
+e.g. `roe deploy -l path/to/UpdatedPackage`
 
 or
 
-`roe deploy -l -n myCustomName /Users/abcdef@ghi.com/Documents/git/myUpdatedProject`
+`roe deploy -l -n myCustomName path/to/UpdatedPackage`
 
 >Note: It will re-use the port from the first deployment.
   
@@ -198,7 +198,7 @@ To get the logs for any package, simply run:
 
 The expected output for that command is shown below:
    
-![logs example](/logs.png)
+![logs example](/assets/img/roe_logs.png)
 
 </details>
 
