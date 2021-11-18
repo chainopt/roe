@@ -49,7 +49,7 @@ When you open the webpage, it should look similar to:
 
 ![API page](assets/img/roe_deployed_model.png)
    
-#### Re-deploying a package.
+#### Re-deploying a package
 
 `roe deploy -l path/to/package`
 
