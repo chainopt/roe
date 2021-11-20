@@ -1,6 +1,8 @@
 [![PyPI version](https://badge.fury.io/py/roe.svg)](https://badge.fury.io/py/roe)
 [![pypi supported versions](https://img.shields.io/pypi/pyversions/roe.svg)](https://pypi.python.org/pypi/roe)
 
+The [Roe River](https://en.wikipedia.org/wiki/Roe_River) is the shortest river in the world, spanning only 61 meters. That's why we named our tool roe, as we strive to make it the shortest path from creating a model to deployment.
+
 Before using, please ensure that [Python](https://www.python.org/downloads/) and [Docker](https://www.docker.com/products/docker-desktop) are installed and running on your machine.
 
 
@@ -231,13 +233,17 @@ To start a package that's not currently running, you can run
 
 ```roe start -l -p packageName```
    
+Afterwards, you should get a confirmation that the designated package has started back up again, like below:
+
+![start example](/assets/img/roe_start.png)
+   
 Alternatively, if you'd like to make sure that all stopped packages are running again, you can run:
 
 ```roe start -l --all```
 
-Both commands currently run without any feedback, as shown below:
-   
-![start example](/assets/img/roe_start.png)
+In this case, you'll be notified of each package that is able to start, in the order that they restart:
+
+![start all example](/assets/img/roe_start_all.png)
 
 </details>
 
